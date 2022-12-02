@@ -1,8 +1,8 @@
 pipeline {
   agent {
-    label 'agent3'
     docker {
-      image 'ubuntu:latest'
+      label 'agent3'
+      image 'node:16-alpine'
     }
   }
   stages {
